@@ -4,61 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style-home.css">
+    <script src="../app/app.js"></script>
     <title>Home</title>
+    
 </head>
 <body>
     
     <header>
         <h1>Tienda Online</h1>
+        <button class='button_carrito' ><img src="../public/carro-de-la-compra.png" alt="carrito" ></button>
+        <span class="notification">0</span>
     </header>
+
     <section>
         <div class="item">
             <img src="https://imgs.search.brave.com/tk38ai3IS1PPCYYD9ccQG1d2PvawnKf78FkSSwUStmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/Y2FtaXNhLW5lZ3Jh/LXBhbGFicmEtdWx0/cmEtYW4tZWxsYV8x/MzQwLTM3Nzc1Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn" alt="" width="300" height="300">
             <div class="info-item">
-                <p class="nombre">producto 1</p>
-                <p class="precio">$$$$</p>
+                <div>
+                    <p class="nombre" id="a1">producto 1</p>
+                    <p class="precio" id="10">$10.400</p>
+                </div>
+                <button class="button-item disabled" id="1" onclick="getNotification(1,'a1',10)" >agregar</button>
             </div>
-            <input type="submit" value="agregar" class="button-item">
         </div>
         <div class="item">
             <img src="https://imgs.search.brave.com/tk38ai3IS1PPCYYD9ccQG1d2PvawnKf78FkSSwUStmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/Y2FtaXNhLW5lZ3Jh/LXBhbGFicmEtdWx0/cmEtYW4tZWxsYV8x/MzQwLTM3Nzc1Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn" alt="" width="300" height="300">
             <div class="info-item">
-                <p class="nombre">producto 2</p>
-                <p class="precio">$$$$</p>
+                <div>
+                    <p class="nombre" id="a2">producto 2</p>
+                    <p class="precio" id="20">$10.400</p>
+                </div>
+                <button class="button-item disabled" id="2" onclick="getNotification(2,'a2',20)" >agregar</button>
             </div>
-            <input type="submit" value="agregar" class="button-item">
+
         </div>
         <div class="item">
             <img src="https://imgs.search.brave.com/tk38ai3IS1PPCYYD9ccQG1d2PvawnKf78FkSSwUStmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/Y2FtaXNhLW5lZ3Jh/LXBhbGFicmEtdWx0/cmEtYW4tZWxsYV8x/MzQwLTM3Nzc1Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn" alt="" width="300" height="300">
             <div class="info-item">
-                <p class="nombre">producto 3</p>
-                <p class="precio">$$$$</p>
+                <div>
+                    <p class="nombre" id="a3">producto 3</p>
+                    <p class="precio" id="30">$12.000</p>
+                </div>
+                <button class="button-item disabled" id="3" onclick="getNotification(3,'a3',30)">agregar</button>
             </div>
-            <input type="submit" value="agregar" class="button-item">
+ 
         </div>
         <div class="item">
             <img src="https://imgs.search.brave.com/tk38ai3IS1PPCYYD9ccQG1d2PvawnKf78FkSSwUStmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/Y2FtaXNhLW5lZ3Jh/LXBhbGFicmEtdWx0/cmEtYW4tZWxsYV8x/MzQwLTM3Nzc1Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn" alt="" width="300" height="300">
             <div class="info-item">
-                <p class="nombre">producto 4</p>
-                <p class="precio">$$$$</p>
+                <div>
+                    <p class="nombre" id="a4">producto 4</p>
+                    <p class="precio" id="40">$8.600</p>
+                </div>
+                <button class="button-item disabled" id="4" onclick="getNotification(4,'a4',40)">agregar</button>
             </div>
-            <input type="submit" value="agregar" class="button-item">
+
         </div>
         <div class="item">
             <img src="https://imgs.search.brave.com/tk38ai3IS1PPCYYD9ccQG1d2PvawnKf78FkSSwUStmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/Y2FtaXNhLW5lZ3Jh/LXBhbGFicmEtdWx0/cmEtYW4tZWxsYV8x/MzQwLTM3Nzc1Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn" alt="" width="300" height="300">
             <div class="info-item">
-                <p class="nombre">producto 5</p>
-                <p class="precio">$$$$</p>
+                <div>
+                    <p class="nombre" id="a5">producto 5</p>
+                    <p class="precio" id="50">$3.400</p>
+                </div>
+                <button class="button-item disabled" id="5" onclick="getNotification(5,'a5',50)">agregar</button>
             </div>
-            <input type="submit" value="agregar" class="button-item">
+
         </div>
         <div class="item">
             <img src="https://imgs.search.brave.com/tk38ai3IS1PPCYYD9ccQG1d2PvawnKf78FkSSwUStmA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90by1ncmF0aXMv/Y2FtaXNhLW5lZ3Jh/LXBhbGFicmEtdWx0/cmEtYW4tZWxsYV8x/MzQwLTM3Nzc1Lmpw/Zz9zaXplPTYyNiZl/eHQ9anBn" alt="" width="300" height="300">
             <div class="info-item">
-                <p class="nombre">producto 6</p>
-                <p class="precio">$$$$</p>
+                <div>
+                    <p class="nombre" id="a6">producto 6</p>
+                    <p class="precio" id="60">$15.000</p>
+                </div>
+                <button class="button-item disabled" id="6" onclick="getNotification(6,'a6',60)">agregar</button>
             </div>
-            <input type="submit" value="agregar" class="button-item">
+
         </div>
     </section>
 </body>
